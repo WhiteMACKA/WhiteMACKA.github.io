@@ -14,7 +14,7 @@
 
     <div class="wrapper">
         <div class="form">
-            <form action="">
+            <form id="form" action="">
 
                 <div class="title">Регистрация</div>
 
@@ -33,7 +33,7 @@
                     </div>
                 </div>                
 
-                <button type="action">Зарегистрировать</button>
+                <button id="send" type="action">Зарегистрировать</button>
             </form>
         </div>
     </div>
@@ -41,7 +41,17 @@
     <script src="js/main.js" defer></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let send = document.getElementById('send');
 
+        document.getElementById('full_name').value = tg.initDataUnsafe.full_name;
+
+        send.addEventListener('click', () => {
+
+        });
+    </script>
 </body>
 
 </html>
