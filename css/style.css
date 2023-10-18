@@ -28,7 +28,7 @@ body {
     height: 340px;
     width: 280px;
     background-color: white;
-    padding: 100px 50px;
+    padding: 70px 50px;
     border-radius: 10px;
 }
 
@@ -41,12 +41,14 @@ form {
 }
 
 div.title {
-    font-size: 3rem;
+    font-size: 2.2rem;
     text-align: center;
+    font-weight: 600;
 }
 
 div.actions {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    margin-top: 5px;
 }
 
 div.item {
@@ -61,6 +63,7 @@ div.item {
 }
 
 button {
+    margin-top: 10px;
     padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
