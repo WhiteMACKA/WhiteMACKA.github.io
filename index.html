@@ -46,10 +46,10 @@
         let tg = window.Telegram.WebApp;
         let send = document.getElementById('send');
 
-        document.getElementById('full_name').value = tg.initDataUnsafe.full_name;
+        document.getElementById('full_name').value = tg.initDataUnsafe.first_name + " " + tg.initDataUnsafe.last_name;
 
         send.addEventListener('click', () => {
-
+            tg.close();
         });
     </script>
 </body>
