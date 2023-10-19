@@ -60,10 +60,10 @@
                 user_post: post,
                 user_phone: phone
             }
-            WebApp.sendData('Данные готовы. Отправляем.');
-            WebApp.sendData(JSON.stringify(data));
+            WebApp.showAlert('Данные готовы. Отправляем.');
             WebApp.showAlert(JSON.stringify(data));
-            WebApp.sendData('Данные отправлены.');
+            WebApp.sendData(JSON.stringify(data));
+            WebApp.showAlert('Данные отправлены.');
             
             
             WebApp.close();
