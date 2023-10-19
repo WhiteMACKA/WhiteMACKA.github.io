@@ -51,6 +51,17 @@
         document.getElementById('full_name').value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
 
         send.addEventListener('click', () => {
+            let full_name = document.getElementById('full_name').value;
+            let post = document.getElementById('post').value;
+            let phone = document.getElementById('phone').value;
+            
+            let data = {
+                full_name: full_name,
+                post: post,
+                phone: phone
+            }
+            tg.sendData(JSON.stringify(data));
+            
             tg.close();
         });
     </script>
