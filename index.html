@@ -55,12 +55,12 @@
             let post = document.getElementById('post').value;
             let phone = document.getElementById('phone').value;
             
-            // let data = {
-            //     user_name: full_name,
-            //     user_post: post,
-            //     user_phone: phone
-            // }
-            //WebApp.showAlert(JSON.stringify(data))
+            let data = {
+                user_name: full_name,
+                user_post: post,
+                user_phone: phone
+            }
+            WebApp.showAlert(JSON.stringify(data))
             //WebApp.sendData(JSON.stringify(data));
             
             WebApp.close();
