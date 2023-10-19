@@ -60,6 +60,7 @@
                 post: post,
                 phone: phone
             }
+            alert(JSON.stringify(data))
             tg.sendData(JSON.stringify(data));
             
             tg.close();
