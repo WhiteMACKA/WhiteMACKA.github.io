@@ -14,7 +14,12 @@
     <script>
         alert('Start 1')
         let WebApp = window.Telegram.WebApp;
-        alert(WebApp.initDataUnsafe.user.username);
+        
+
+        let div = document.getElementById("myDiv");
+        let json = JSON.stringify(obj, null, 2); // преобразование в JSON-строку с отступами
+        div.textContent = json;
+
         alert('1')
         let send = document.getElementById('send');
         alert('2')
@@ -71,6 +76,10 @@
                         <input id="phone" type="tel" placeholder="Введите Телефон">
                     </div>
                 </div>                
+
+                <div id="myDiv">
+                    
+                </div>
 
                 <button id="send" type="action">Зарегистрировать</button>
             </form>
