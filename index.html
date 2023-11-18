@@ -14,12 +14,13 @@
     <script>
         alert('!!!')
         let WebApp = window.Telegram.WebApp;
+        alert('1')
         let send = document.getElementById('send');
-
+        alert('2')
         WebApp.expand();
-
+        alert('3')
         document.getElementById('full_name').value = WebApp.initDataUnsafe.user.first_name + " " + WebApp.initDataUnsafe.user.last_name;
-
+        alert('4')
         
         send.addEventListener('click', () => {
 
