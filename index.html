@@ -18,7 +18,7 @@
         <div class="form">
             <form id="form" action="">
 
-                <div class="title">Регистрация!!!</div>
+                <div class="title">Регистрация +</div>
 
                 <div class="actions">
                     <div class="full_name item">
@@ -46,6 +46,7 @@
 
     <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
     <script>
+        alert('!!!')
         let WebApp = window.Telegram.WebApp;
         let send = document.getElementById('send');
 
@@ -53,8 +54,7 @@
 
         document.getElementById('full_name').value = WebApp.initDataUnsafe.user.first_name + " " + WebApp.initDataUnsafe.user.last_name;
 
-        alert('!!!')
-
+        
         send.addEventListener('click', () => {
 
             alert('Кнопка нажата')
